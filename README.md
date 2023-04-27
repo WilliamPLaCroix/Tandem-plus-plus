@@ -37,7 +37,7 @@ Also if your project will require authentication like passwords or usernames, th
 * Karen Li:
   * GitHub: 
   * LinkedIn: 
-* Aasma Ibrahim:
+* Asmaa Ibrahim:
   * GitHub: 
   * LinkedIn: 
 * William LaCroix: 
