@@ -27,6 +27,7 @@ def tokenize_textgrid(filename) -> list:
     Reads in TextGrid file, extracting transcript from grid.tiers[0]
     cleans off [] from (sic?) words,
     returns tokenized list >>> no punctuation, <P> indicates pause
+    # learn to write better docstrings...
     """
     pattern = re.compile("[\[\]]+")
     fp = open(filename, "r", encoding="utf-8").read()
