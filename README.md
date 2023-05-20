@@ -49,12 +49,3 @@ Also if your project will require authentication like passwords or usernames, th
 Also, if you followed tutorials or referenced a certain material that might help the user to build that particular project, include links to those here as well.
 
 This is just a way to show your appreciation and also to help others get a first hand copy of the project.
-
-## 7. Add a License TODO
-For most README files, this is usually considered the last part. It lets other developers know what they can and cannot do with your project.
-
-We have different types of licenses depending on the kind of project you are working on. Depending on the one you will choose it will determine the contributions your project gets.
-
-The most common one is the GPL License which allows other to make modification to your code and use it for commercial purposes. If you need help choosing a license, use check out this link: https://choosealicense.com/
-
-Up to this point what we have covered are the minimum requirements for a good README. But you might also want to consider adding the following sections to make it more eye catching and interactive.
