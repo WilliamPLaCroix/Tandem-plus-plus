@@ -5,6 +5,7 @@ from random import randint
 import math
 import csv
 import pandas as pd
+import cefr
 def calculate_perplexity(predictions, actual_tokens):
     log_likelihood = 0.0
     num_tokens = len(actual_tokens)
@@ -40,15 +41,21 @@ def main():
     ]
 
     max_token_limit = 1000
-
+    # Llama prompt
     prompt = ["[INST] <<SYS>> You are a friendly German language partner. Your role is to chat with language learners to help them improve their language skills. Your answers should be brief, friendly and conversational. Please answer in A1-level German. <</SYS>>\n"]
+    # Non-llama prompt
+    # prompt = ["You are a friendly German language partner. Your role is to chat with language learners to help them improve their language skills. Your answers should be brief, friendly and conversational. Please answer in A1-level German.\n"]
     with open('Test set.csv', 'r') as f:
         test_data = list(csv.reader(f, delimiter=","))
 
     responses = []
     perplexities = []
-    for input in test_data:
+    grades = []
+    for input in test_data[:5]:
+        # Llama input
         input = prompt + '\n' + input[0] + '[/INST]'
+        # Non-llama input
+        # input = prompt + '\n' + input[0]
         tokenized_prompt = tokenizer.encode(input, return_tensors="pt")
         # Generate a response 
         outputs = model.generate(
@@ -72,11 +79,12 @@ def main():
         # Calculate perplexity for the model's predictions
         perplexity = calculate_perplexity(logits, tokenized_prompt)
         perplexities.append(perplexity)
+        grade = cefr.CEFR_level_guesser(bot_response)
+        grades.append(grade)
+        print(perplexity)
     
-    results_dict = {"input":test_data, "response":responses, "perplexity":perplexities}
+    results_dict = {"input":test_data, "response":responses, "perplexity":perplexities, "grade":grades}
     pd.Dataframe(results_dict).to_csv("evaulation_output.csv")
 
-        
-
-        
-main()
+if __name__ == "__main__":    
+    main()

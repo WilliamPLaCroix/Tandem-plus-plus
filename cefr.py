@@ -2,6 +2,7 @@ from nltk.tokenize import word_tokenize
 import numpy as np
 import pandas as pd
 import json
+import matplotlib.pyplot as plt
 
 def compile_CEFR_setlist()-> list:
     """
@@ -18,9 +19,8 @@ def compile_CEFR_setlist()-> list:
         groups = [gb.get_group(group) for group in gb.groups]
     return groups
 
-
-
 def build_constraint_lists():
+    
     with open('constraint_lists.json', 'r', encoding="utf-8") as f:
         constraint_lists = json.load(f)
     full_A1_word_list = {word.lower() for unit in constraint_lists['A1 Full List'] for word in constraint_lists['A1 Full List'][unit]}
@@ -55,6 +55,7 @@ def build_dataset():
 
 
 def get_group_means():
+
     data = build_dataset()
     groups = data.groupby('CEFR')
     high_frequency_means = groups['% High Frequency'].mean()
@@ -64,8 +65,6 @@ def get_group_means():
     print(high_frequency_means_list)
     print(full_list_means_list)
     return high_frequency_means_list, full_list_means_list
-
-import matplotlib.pyplot as plt
 
 def plot_percentage_curves():
     high_frequency_means_list, full_list_means_list = get_group_means()
@@ -86,6 +85,7 @@ def plot_percentage_curves():
     plt.plot(range(1, 7), fit1[0] * range(1, 7) + fit1[1], color='red')
     plt.plot(range(1, 7), fit2[0] * range(1, 7) + fit2[1], color='red')
     plt.show()
+
 
 def word_list_percentages(text):
 
