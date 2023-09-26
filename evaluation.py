@@ -30,7 +30,6 @@ def calculate_perplexity(predictions, actual_tokens):
             print("token logit:", token_logit.item())
             probability = math.exp(token_logit.item())/(1 + math.exp(token_logit.item()))
             print("probability:", probability)
-            #print("probability:", probability)
             if probability != 0:
                 log_probability += math.log(probability)
         # Calculate perplexity as the exponential of the negative log-likelihood
