@@ -54,12 +54,12 @@ def generate_constraint_sample(constraint_list):
 
 def main():
 
-    # tokenizer = AutoTokenizer.from_pretrained("jphme/Llama-2-13b-chat-german")
-    # model = AutoModelForCausalLM.from_pretrained("jphme/Llama-2-13b-chat-german")
+    tokenizer = AutoTokenizer.from_pretrained("jphme/Llama-2-13b-chat-german")
+    model = AutoModelForCausalLM.from_pretrained("jphme/Llama-2-13b-chat-german")
 
-    from transformers import AutoTokenizer, AutoModelWithLMHead
-    tokenizer = AutoTokenizer.from_pretrained("dbmdz/german-gpt2")
-    model = AutoModelWithLMHead.from_pretrained("dbmdz/german-gpt2")
+    # from transformers import AutoTokenizer, AutoModelWithLMHead
+    # tokenizer = AutoTokenizer.from_pretrained("dbmdz/german-gpt2")
+    # model = AutoModelWithLMHead.from_pretrained("dbmdz/german-gpt2")
 
     # Takes a 30-word slice as constraint list for generation
     constraint_list = generate_constraint_list()
@@ -68,7 +68,7 @@ def main():
     ]
 
     # Llama prompt:
-    prompt = "[INST] <<SYS>> You are a friendly German language partner. Your role is to chat with language learners to help them improve their language skills. Your answers should be brief, friendly and conversational. Please answer in A1-level German. <</SYS>>"
+    prompt = "[INST] <<SYS>> You are a friendly German language partner. Your role is to chat with language learners to help them improve their language skills. Your answers should be brief, friendly and conversational. Please answer in B1-level German. <</SYS>>"
     # Non-llama prompt:
     # prompt = ["You are a friendly German language partner. Your role is to chat with language learners to help them improve their language skills. Your answers should be brief, friendly and conversational. Please answer in A1-level German."]
     # Most basic prompt:
