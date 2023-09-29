@@ -6,7 +6,7 @@ import math
 import csv
 import pandas as pd
 import cefr
-import re, string
+import re
 from tqdm import tqdm
 import torch
 import numpy as np
@@ -24,18 +24,19 @@ def calculate_perplexity(predictions, actual_tokens):
             actual_token = actual_tokens[i]
             token_logit = token_logits[beam][actual_token]
             # Calculate the log likelihood of the actual token
-            # if torch.isinf(token_logit) == True or token_logit.item() == -1.0000e+09:
-            #     log_likelihood += 1
-            # else:
-            print("token logit:", token_logit.item())
-            probability = math.exp(token_logit.item())/(1 + math.exp(token_logit.item()))
-            print("probability:", probability)
-            if probability != 0:
-                log_probability += math.log(probability)
+            if torch.isinf(token_logit) != True and token_logit.item() != -1000000000.0:
+                log_probability += token_logit.item()
+                #print("token logit:", token_logit.item())
+            # probability = math.exp(token_logit.item())/(1 + math.exp(token_logit.item()))
+            # print("probability:", probability)
+            # if probability != 0:
+            #     log_probability += math.log(probability)
         # Calculate perplexity as the exponential of the negative log-likelihood
-        perplexity = math.exp(-log_probability / num_tokens)
-        perplexities.append(perplexity)
+        # perplexity = math.exp(-log_probability / num_tokens)
+        # perplexities.append(perplexity)
         # perplexities.append(-log_probability / num_tokens)
+        avg_log_probability = log_probability / num_tokens
+        perplexities.append(-avg_log_probability)
 
     return np.mean(perplexities)
 
@@ -110,16 +111,16 @@ def main():
                 pass
 
         # Extract and print the chatbot's response
-        bot_response = tokenizer.decode(outputs.sequences[0])[len(input)+1:]
+        logits = outputs.scores
+        bot_response = tokenizer.decode(outputs.sequences[0])[-len(logits):]
         responses.append(bot_response)
         print("Chatbot:", bot_response)
         # calculate perplexity
-        logits = outputs.scores
         # Calculate perplexity for the model's predictions
-        print("logits length:",len(logits))
-        print("output sequence:", outputs.sequences[0][-len(logits):])
-        print("decoded output:", tokenizer.decode(outputs.sequences[0][-len(logits):]))
-        print("sequence length:",len(outputs.sequences[0][-len(logits):])) #[len(tokenized_prompt):]
+        # print("logits length:",len(logits))
+        # print("output sequence:", outputs.sequences[0][-len(logits):])
+        # print("decoded output:", tokenizer.decode(outputs.sequences[0][-len(logits):]))
+        # print("sequence length:",len(outputs.sequences[0][-len(logits):])) #[len(tokenized_prompt):]
         perplexity = calculate_perplexity(logits, outputs.sequences[0][-len(logits):])
         perplexities.append(perplexity)
         response = bot_response.split()
