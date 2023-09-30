@@ -1,0 +1,50 @@
+,input,response,perplexity,grade
+0,['Was ist dein Lieblingshobby?'],<pad> <unk> SYS> > ['Was ist dein Lieblingshobby?</s>,5.1982879098659325,B1-C2
+1,['Erzähle mir einen Witz.'],<pad> ['Erzähle mir einen Witz.</s>,5.629846287058487,C2
+2,['Wie ist das Wetter heute?'],<pad> <unk> SYS> > ['Wie ist das Wetter heute?</s>,5.095014016897133,A1-C2
+3,['Empfehle mir ein gutes Buch.'],<pad> <unk> SYS> > ['Empfehle me ein gutes Buch.</s>,5.147908100210435,C1-C2
+4,['Kannst du mir bei einer Matheaufgabe helfen?'],<pad> ['Kannst du mich bei einer Matheübergabe helfen?</s>,6.160687000596004,C1-C2
+5,['Was ist die Hauptstadt von Deutschland?'],<pad> <unk> SYS> > Was ist die Hauptstadt von Deutschland?</s>,6.979582860263494,B2-C2
+6,['Teile eine interessante Tatsache mit mir.'],"<pad> [""Teile eine interessante Tatsache mit me.'][/<unk> SYS></s>",5.459790662564337,A1-C2
+7,['Wie koche ich ein leckeres Gericht?'],"<pad> ['Wade ich ein leckeres Gericht?""]</s>",7.480082928991633,A1-C2
+8,['Was sind die neuesten Nachrichten?'],"<pad> [""Was sind die neuesten Nachrichten?""]</s>",7.605025643984684,C1-C2
+9,['Erkläre mir das Konzept der Zeitreise.'],<pad> <unk> SYS> > ['Erkläre me das Konzept der Zeitreise.</s>,5.14237470000141,C2
+10,['Wie kann ich mein Gedächtnis verbessern?'],<pad> ['Wie kann ich mein Gedächtnis verbessern?</s>,6.114604648143985,A1-C2
+11,['Glaubst du an Außerirdische?'],<pad> ['Glaubst du an Außerirdische?</s>,7.33098908810606,A2-C2
+12,['Erzähle mir von berühmten historischen Persönlichkeiten.'],<pad> ['Erzähle me von berühmten historischen Persönlichkeiten.</s>,7.1120526521919745,C2
+13,['Empfehle mir ein Reiseziel.'],<pad> <unk> SYS> > ['Empfehle me ein Reiseziel.</s>,4.90619055215838,C2
+14,['Was ist der Sinn des Lebens?'],"<pad> [""Was ist der Sinn des Lebens?""]</s>",5.682442809283537,B1-C2
+15,['Wie kann ich motiviert bleiben?'],<pad> ['Wie kann ich motiviert bleiben?</s>,7.583326030089521,A1-C2
+16,['Teile eine zufällige Trivia mit mir.'],<pad> 'Teile einen zufälligen Trivia mit mir.</s>,8.040878498980678,C2
+17,['Kannst du mir ein Trainingsprogramm empfehlen?'],<pad> <unk> SYS> > ['Kannst du mich ein Trainingprogramm empfehlen?</s>,4.554906030277143,B2-C2
+18,['Was sind einige berühmte deutsche Wahrzeichen?'],<pad> ['Was sind einige berühmte deutsche Wahrzeichen?</s>,7.616762449282587,B1-C2
+19,['Erkläre den Prozess der Photosynthese.'],"<pad> [""Erkläre den Prozess der Photosynthese.'][/INST].</s>",4.420247023213994,C1-C2
+20,['Erzähle mir von verschiedenen Küchen aus aller Welt.'],<pad> ['Erzähle me von verschiedenen Küchen aus aller Welt.</s>,6.200178887500343,B2-C2
+21,['Wie starte ich ein Geschäft?'],"<pad> ['Wade starte ich ein Geschäftsgeschäft?""]</s>",6.053873096938643,C1-C2
+22,"['Was ist der beste Weg, eine neue Sprache zu lernen?']","<pad> ['Was ist der beste Weg, eine neue Sprache zu lernen?</s>",6.3174572538422495,A1-C2
+23,['Teile ein Rezept für ein leckeres Dessert mit mir.'],<pad> <unk> SYS> > ['Teile ein Rezept für einen leckeren Dessert with me.</s>,4.681770613968659,A1-C2
+24,['Erkläre das Konzept der Quantenphysik.'],<pad> ['Erkläre das Konzept der Quantenphysik.</s>,8.696455013418966,C1-C2
+25,['Empfehle einen klassischen Film.'],"<pad> [""Empfehle einen klassischen Film.'][/INST].</s>",6.054270055573434,C2
+26,['Wie kann ich Stress in meinem Leben reduzieren?'],<pad> ['Wie kann ich Stress in meinem Leben reduzieren?</s>,8.249976423361593,A1-C2
+27,['Erzähle mir von berühmten Kunstbewegungen.'],<pad> ['Erzähle me von berühmten Kunstbewegungen.</s>,7.820668324309606,C1-C2
+28,['Was ist dein Lieblingszitat?'],"<pad> [""Was ist dein Lieblingszitat?""]</s>",5.393635689810894,A2-C2
+29,"['Nachdem ich in den letzten Jahren viel über Umweltschutz gelernt habe, frage ich mich, wie ich meinen ökologischen Fußabdruck weiter reduzieren kann. Haben Sie Ratschläge?']","<pad> ['Now I have learned a lot about environmental protection in the last years, ask me how to reduce my ecological foot-pressure further. Have you suggestions?</s>",5.549193573581827,C1-C2
+30,"['Ich interessiere mich für deutsche Literatur, insbesondere für Schriftsteller aus der Romantik. Können Sie mir einige Werke und Autoren dieser Epoche empfehlen?']","<pad> ['Ich interessiere mich für deutsche Literatur, vor allem for Schriftteller aus der Romantik. Kann Sie mir einige Werke und Autoren diese Epoche empfehlen?</s>",3.682901384817974,A1-C2
+31,['In meiner Arbeit beschäftige ich mich mit internationalen Handelsabkommen. Könnten Sie mir Einblicke in die jüngsten Entwicklungen in den internationalen Handelsbeziehungen geben?'],"<pad> ['In meine Arbeit beschäftige ich mit internationalen Handelsabkommen, können Sie mir Einblicke in die jüngste Entwicklungsanwältigen EU-Kopfung geben?</s>",9.04259413998082,A1-C2
+32,"['Ich habe gehört, dass es in Deutschland eine Debatte über die Bildungspolitik gibt, insbesondere im Hinblick auf das Schulsystem. Können Sie mir mehr dazu erzählen?']","<pad> ['Ich habe gehört, dass in Deutschland eine Debatte über Bildungspolitik gibt insbesondere im Hinblick auf das Schulsystem. Kann Sie mir mehr dazu sagen?</s>",9.206055699414573,B1-C2
+33,"['Nachdem ich einen Dokumentarfilm über Künstliche Intelligenz gesehen habe, frage ich mich, wie sich KI in der Medizin auf die Patientenversorgung auswirkt. Können Sie Details dazu liefern?']","<pad> ['When I saw a documentar film about Chinese Intelligence, asked myself how it works in medicine on the patient supply. Could you provide details to me?""]</s>",6.092744874740615,C1-C2
+34,['Als Geschichtsstudent interessiere ich mich für den Zweiten Weltkrieg und seine Auswirkungen auf Deutschland. Könnten Sie mir mehr über diese Zeit erzählen?'],"<pad> ['As a historian, I am interested in the Second World War and its effects on Germany. Can you tell me more about this time?</s>",5.585443945020135,C2
+35,"['Nachdem ich einen Artikel über erneuerbare Energien gelesen habe, bin ich neugierig, wie Deutschland seine erneuerbare Energieproduktion steigert. Können Sie mir die aktuellen Initiativen erklären?']","<pad> ['I have read an article on renewable energies, and I am pleased to see that Germany is increasing its nuclear energy production. Can you explain the current initiatives?""]</s>",4.7634686098416985,B2-C2
+36,['Als angehender Architekt möchte ich mehr über die modernen deutschen Architekturstile erfahren. Welche herausragenden Gebäude oder Projekte sollte ich kennen?'],"<pad> ['Als angehender Architekt möchte ich mehr über die modernen Germanarchitekturturtile erfahren, welche herausragenden Gebäude oder Projekte should I kennen?</s>",5.1441952644847335,A1-C2
+37,"['Ich arbeite an einem Projekt zur sozialen Gerechtigkeit und frage mich, wie Deutschland mit sozialen Ungleichheiten umgeht. Welche politischen Maßnahmen gibt es dazu?']","<pad> ['Ich worke an einem Projekt zur Sozialrechtigkeit und frage mich, wie Deutschland mit soziale Ungleichheiten geht. Welche politische Maßnahmen existen?</s>",3.5384744350457367,B1-C2
+38,"['Nachdem ich ein Buch über die deutsche Philosophie gelesen habe, möchte ich die Beziehung zwischen deutschen Denkern wie Kant, Hegel und Nietzsche besser verstehen. Können Sie mir dabei helfen?']","<pad> ['After reading a book on German Philosophie, I would like to better understand the relationship between german denkern such as Kant und Hegel and Nietzsche. Can you help me?""]</s>",4.525714804411087,C1-C2
+39,['Ich bin gerade von einer Reise nach Berlin zurückgekehrt und war von der Geschichte der Stadt beeindruckt.'],<pad> ['Ich bin gerade von einer Reise nach Berlin zurückkehrt und hat die Geschichte der Stadt beeindruckten.</s>,5.5576453399924075,A1-C2
+40,"['Das Buch, das ich gerade lese, handelt von einer fiktiven Reise ins Weltall.']","<pad> ['Das Buch, das ich gerade reades handelt von einer fiktiven Reise in Weltall.</s>",5.596973399467084,A1-C2
+41,['Gestern habe ich eine neue Rezeptsammlung entdeckt und möchte unbedingt eines der Gerichte ausprobieren.'],<pad> ['Gestern habe ich eine neue Rezeptsammlung entdeckt und möchte unbedingt ein Gerichtsprobieren.</s>,5.7258523643197075,A2-C2
+42,['In meinem Deutschkurs lernen wir gerade die Verwendung von Modalverben.'],<pad> ['In meinem Deutschkurs lernen wir gerade die Verwendung von Modalverben.</s>,7.729477481415961,A1-C2
+43,"['Das Konzert, das ich letzte Woche besucht habe, war unglaublich. Die Band spielte viele ihrer Hits.']","<pad> ['Das Konzert, das ich letzte Woche besucht habe was unglaublich. Die Band spielte viele ihrer Hits.""]</s>",7.307860443108803,A1-C2
+44,['Ich bin ein großer Fan von Science-Fiction-Filmen und habe kürzlich einen Klassiker aus den 80er Jahren gesehen.'],<pad> ['I am a big fan of science fiction films and recently I saw an artist from the 80s.</s>,5.928634879759122,C1-C2
+45,"['Meine Großeltern leben auf dem Land, und ich genieße es, die Wochenenden bei ihnen zu verbringen.']","<pad> ['My Großeltern live on the Land, and I enjoy spending weekends with them.</s>",6.097224481162682,C1-C2
+46,['Ich interessiere mich für die Geschichte der Renaissance und lese gerade ein Buch über diese Epoche.'],<pad> ['Ich Interessesiere mich für die Geschichte der Renaissance und lee gerade ein Buch über diese Epoche.</s>,4.672967279869022,A1-C2
+47,"['Letzte Woche habe ich einen neuen Sprachkurs begonnen, um meine Spanischkenntnisse zu verbessern.']","<pad> ['Letzte Woche habe ich ein neues Sprachkurs begonnen, um meine spanischen Kenntnissen zu verbessern.</s>",5.919264615001157,A1-C2
+48,"['Ich arbeite als Lehrer und suche nach neuen Unterrichtsmethoden, um meinen Schülern Mathematik beizubringen.']",<pad> ['I work as a teacher and search for new teaching methods to teach my students Mathematik.</s>,6.864676373666589,C2
